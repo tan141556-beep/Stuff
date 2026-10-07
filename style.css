@@ -1,0 +1,144 @@
+body {
+    font-family: 'Caveat', cursive, sans-serif;
+    font-style: italic;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+
+    color: #fdfcf7; 
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+
+    background-image: url('images/ocean-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    background-color: rgba(255, 252, 245, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    max-width: 780px;
+    margin: 50px auto;
+    padding: 45px 50px;
+    border-radius: 28px;
+
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35),
+    inset 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+    font-family: 'Fredericka the Great', 'Caveat', cursive;
+    font-size: 4.2rem;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    color: #fff176;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9), 
+    0 0 12px rgba(245, 158, 11, 0.35);
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff59d;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px dashed rgba(217, 119, 6, 0.35);
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    margin: 20px 0;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15),
+    0 0 15px rgba(254, 240, 138, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.center-img {
+    display: block;
+    margin: 25px auto;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.015);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25),
+    0 0 22px rgba(253, 224, 71, 0.45);
+}
+
+p {
+    font-family: 'Caveat', cursive, sans-serif;
+    font-style: italic;
+    text-indent: 2em;
+    margin-bottom: 18px;
+    color: #fdfcf7;
+    text-shadow: 0 1px 3px rgba(35, 20, 5, 0.45);
+}
+
+a {
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+    font-size: 1.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+
+    background-image: url('images/ocean-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 8px 28px;
+    margin: 20px 14px 10px 0;
+    border-radius: 35px;
+
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18),
+    inset 0 0 10px rgba(255, 255, 255, 0.7),
+    inset 0 2px 4px rgba(255, 255, 255, 0.9);
+    
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+a:hover {
+    color: #fff9c4;
+    text-decoration: underline;
+    transform: translateY(-4px) scale(1.03);
+    
+    border-color: #ffffff;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25),
+    0 0 16px rgba(255, 255, 255, 0.8),
+    inset 0 0 14px rgba(255, 255, 255, 0.9);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 25px 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin: 0;
+}
